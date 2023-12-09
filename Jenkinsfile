@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Config.."
                 sh '''
-                apk add py3-setuptools
+                apk add --update py3-pip
                 '''
             }
         }
