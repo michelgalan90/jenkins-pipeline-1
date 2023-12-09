@@ -8,6 +8,14 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
+        stage('Config') {
+            steps {
+                echo "Config.."
+                sh '''
+                apk add pip
+                '''
+            }
+        }
         stage('Build') {
             steps {
                 echo "Building.."
