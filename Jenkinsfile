@@ -31,7 +31,8 @@ pipeline {
                 sh '''
                 cd myapp
                 python3 hello.py
-                python3 hello.py --name=Brad
+                python3 hello.py --name=Pollito
+                python3 hello.py --name=Super_Mario
                 '''
             }
         }
